@@ -1,0 +1,39 @@
+.cmp--accordion {
+  .acc-item {
+    margin-bottom: 10px;
+  }
+
+  a.title {
+    font-family: $font-family-base;
+    display: flex;
+    justify-content: space-between;
+    color: $c-green;
+    font-size: 1.25rem;
+    font-weight: bold;
+    outline: none;
+  }
+
+  .acrd-header {
+    background-color: $c-gray;
+    //padding: 30px 20px;
+    padding: 15px 20px;
+
+    .high-contrast & {
+      background-color: $c-white;
+
+      * {
+        color: $c-black;
+        background-color: $c-white !important;
+      }
+    }
+  }
+
+  .acrd-body {
+    border: 1px solid $c-gray;
+    border-top: 0;
+  }
+
+  .card-block {
+    font-size: 1rem;
+  }
+}

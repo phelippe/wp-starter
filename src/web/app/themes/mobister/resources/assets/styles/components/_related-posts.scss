@@ -1,0 +1,35 @@
+.related-posts {
+  border-top: 1px solid $c-blue-light;
+  padding: 45px 0 75px;
+
+  .sect-title {
+    font-size: 1.125rem;
+    margin-bottom: 15px;
+  }
+
+  article {
+    display: flex;
+
+    a {
+      background-color: $c-blue;
+      border-top: 5px solid $c-green;
+      color: $c-white;
+      display: flex;
+      flex-direction: column;
+      padding: 30px;
+      width: 100%;
+    }
+
+    .post-meta {
+      color: $c-green;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .post-title {
+      font-family: $font-family-base;
+      font-size: 1.25rem;
+      font-weight: normal;
+    }
+  }
+}

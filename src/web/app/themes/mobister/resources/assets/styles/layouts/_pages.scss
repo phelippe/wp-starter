@@ -1,0 +1,9 @@
+body {
+  &.page {
+    &.home {
+      section {
+        border-bottom: 1px solid black;
+      }
+    }
+  }
+}

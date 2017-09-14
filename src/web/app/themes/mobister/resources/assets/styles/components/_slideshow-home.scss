@@ -1,0 +1,124 @@
+.cmp--slideshow {
+  overflow-x: hidden;
+  margin-bottom: 0 !important;  // tem que ter pois é adicionado um slick-dotted com mais força
+
+  .slide-item {
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+  }
+
+  .slide-item,
+  .container {
+    @include media-breakpoint-up(md) {
+      height: 445px;
+    }
+  }
+
+  .container {
+    position: relative;
+    padding-top: 75px;
+    padding-bottom: 75px;
+
+    @include media-breakpoint-up(md) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .grafismo {
+      position: absolute;
+      left: -220px;
+      bottom: 0;
+      z-index: 0;
+      display: none;
+
+      @include media-breakpoint-up(md) {
+        display: block;
+      }
+    }
+  }
+
+  .slide-item {
+    &.side-2 {
+      .grafismo {
+        left: auto;
+        right: -170px;
+      }
+
+      .texts {
+        @include media-breakpoint-up(md) {
+          //@include make-col-offset(6);
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  .row {
+    height: 100%;
+    z-index: 2;
+    position: relative;
+    align-items: flex-end;
+  }
+
+  .texts {
+    color: $c-white;
+
+    @include media-breakpoint-up(md) {
+      padding-bottom: 50px;
+      padding-right: 50px;
+    }
+
+    .container-title {
+      margin-bottom: 15px;
+
+      @include media-breakpoint-up(md) {
+        margin-bottom: 0;
+      }
+    }
+
+    span {
+      background-color: rgba($c-green, 0.8);
+
+      @include media-breakpoint-up(md) {
+        display: inline-block;
+        padding: 0;
+        padding: 2px 4px;
+        background-color: transparent;
+      }
+    }
+  }
+
+  .title {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    font-family: $font-family-title;
+    font-weight: bold;
+    margin-bottom: 30px;
+
+    @include media-breakpoint-up(md) {
+      font-size: 3.25rem;
+      line-height: 3.25rem;
+    }
+  }
+
+  .desc {
+    font-size: 1.125rem;
+    line-height: 1rem;
+    margin-bottom: 15px;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 35px;
+      font-size: 1.625rem;
+      line-height: 1.625rem;
+    }
+  }
+
+  .slick-dots {
+    bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    left: -50%;
+    right: -50%;
+  }
+}
