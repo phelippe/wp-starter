@@ -1,45 +1,4 @@
 body {
   .page-header {
-    height: 195px;
-    //height: 135px;
-    background: url(../images/bg-pages-header.jpg) no-repeat center top transparent;
-    margin-bottom: 30px;
-
-    .container,
-    .row {
-      height: 100%;
-      align-items: center;
-      color: $c-white;
-    }
-
-    .breadcrumbs {
-      i {
-        color: $c-green;
-      }
-
-      a {
-        color: $c-white;
-      }
-    }
-
-    .page-title {
-      color: $c-green;
-      font-size: 2.625rem;
-      font-weight: bold;
-      font-family: $font-family-title;
-      word-wrap: break-word;
-
-      @include media-breakpoint-up(md) {
-        font-size: 3rem;
-      }
-    }
-
-    .tag {
-      background-color: $c-pink;
-      padding: 5px 15px;
-      display: inline-block;
-      position: relative;
-      top: -10px;
-    }
   }
 }
