@@ -41,9 +41,7 @@ add_action('after_setup_theme', function () {
      */
     register_nav_menus([
         'primary_navigation' => __('Menu Topo', 'sage'),
-        'social_navigation' => __('Menu Redes Sociais', 'sage'),
         'footer_navigation' => __('Menu Rodapé', 'sage'),
-        'systems_navigation' => __('Menu sistemas externos', 'sage')
     ]);
 
     /**
